@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-rod/rod/lib/devices"
-	"github.com/go-rod/rod/lib/input"
-	"github.com/go-rod/rod/lib/proto"
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/PrismAIO/rod/lib/devices"
+	"github.com/PrismAIO/rod/lib/input"
+	"github.com/PrismAIO/rod/lib/proto"
+	"github.com/PrismAIO/rod/lib/utils"
 	"github.com/ysmood/gson"
 )
 

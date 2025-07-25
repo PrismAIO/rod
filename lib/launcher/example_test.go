@@ -4,9 +4,9 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/go-rod/rod"
-	"github.com/go-rod/rod/lib/launcher"
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/PrismAIO/rod"
+	"github.com/PrismAIO/rod/lib/launcher"
+	"github.com/PrismAIO/rod/lib/utils"
 	"github.com/ysmood/leakless"
 )
 

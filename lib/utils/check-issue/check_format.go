@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/PrismAIO/rod/lib/utils"
 )
 
 func checkMarkdown(body string) error {

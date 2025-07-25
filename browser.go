@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-rod/rod/lib/cdp"
-	"github.com/go-rod/rod/lib/defaults"
-	"github.com/go-rod/rod/lib/devices"
-	"github.com/go-rod/rod/lib/launcher"
-	"github.com/go-rod/rod/lib/proto"
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/PrismAIO/rod/lib/cdp"
+	"github.com/PrismAIO/rod/lib/defaults"
+	"github.com/PrismAIO/rod/lib/devices"
+	"github.com/PrismAIO/rod/lib/launcher"
+	"github.com/PrismAIO/rod/lib/proto"
+	"github.com/PrismAIO/rod/lib/utils"
 	"github.com/ysmood/goob"
 )
 

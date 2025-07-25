@@ -4,7 +4,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/go-rod/rod"
+	"github.com/PrismAIO/rod"
 	"github.com/ysmood/gotrace"
 )
 

@@ -2,8 +2,8 @@
 package main
 
 import (
-	"github.com/go-rod/rod"
-	"github.com/go-rod/rod/lib/devices"
+	"github.com/PrismAIO/rod"
+	"github.com/PrismAIO/rod/lib/devices"
 )
 
 func main() {
