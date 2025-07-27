@@ -135,9 +135,10 @@ func (lc *Browser) Download() error {
 
 	dir := lc.Dir()
 
-	fu := fetchup.New(dir, us...)
-	fu.Ctx = lc.Context
-	fu.Logger = lc.Logger
+	fu := fetchup.New(us...)
+	fu.WithSaveTo(dir)
+	fu.WithContext(lc.Context)
+	fu.WithLogger(lc.Logger)
 	if lc.HTTPClient != nil {
 		fu.HttpClient = lc.HTTPClient
 	}
