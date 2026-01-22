@@ -317,7 +317,17 @@ func (p *Page) setHelper(jsCtxID proto.RuntimeRemoteObjectID, name string, fnID 
 	p.helpersLock.Lock()
 	defer p.helpersLock.Unlock()
 
-	p.helpers[jsCtxID][name] = fnID
+	if p.helpers == nil {
+		p.helpers = map[proto.RuntimeRemoteObjectID]map[string]proto.RuntimeRemoteObjectID{}
+	}
+
+	list, ok := p.helpers[jsCtxID]
+	if !ok {
+		list = map[string]proto.RuntimeRemoteObjectID{}
+		p.helpers[jsCtxID] = list
+	}
+
+	list[name] = fnID
 }
 
 // Returns the page's window object, the page can be an iframe.
