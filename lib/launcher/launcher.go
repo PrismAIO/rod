@@ -436,6 +436,10 @@ func (l *Launcher) Launch() (string, error) {
 
 	args := l.FormatArgs()
 
+	if l.logger != nil && l.logger != io.Discard {
+		fmt.Fprintf(l.logger, "bin: %s, args: %v\n", bin, args)
+	}
+
 	if l.Has(flags.Leakless) && leakless.Support() {
 		ll = leakless.New()
 		cmd = ll.Command(bin, args...)
